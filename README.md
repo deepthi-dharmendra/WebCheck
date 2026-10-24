@@ -1,3 +1,5 @@
+
+
 \# WebCheck — Website Availability \& HTTP Diagnostics
 
 
@@ -65,10 +67,6 @@ Enter a website URL and choose the number of checks when prompted.
 
 
 \## Run Automated Tests
-
-
-
-Run the following command from the project directory:
 
 
 
@@ -159,4 +157,6 @@ WebCheck/
 
 
 Python, HTTP, URL handling, CSV reporting, unit testing, mocking, and basic network diagnostics.
+
+
 
