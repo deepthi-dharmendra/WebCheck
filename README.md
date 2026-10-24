@@ -2,7 +2,7 @@
 
 
 
-A Python-based website monitoring tool that checks HTTP responses, measures response time, identifies unsuccessful requests, and exports diagnostic results to CSV.
+A Python-based website monitoring tool that checks HTTP responses, measures response times, identifies unsuccessful requests, and exports diagnostic results to CSV.
 
 
 
@@ -44,7 +44,11 @@ No third-party Python packages are required.
 
 
 
-\## Run the application
+\## Run the Application
+
+
+
+From the project directory, run:
 
 
 
@@ -56,11 +60,15 @@ python webcheck.py
 
 
 
-Enter a website URL and choose the number of checks.
+Enter a website URL and choose the number of checks when prompted.
 
 
 
-\## Run automated tests
+\## Run Automated Tests
+
+
+
+Run the following command from the project directory:
 
 
 
@@ -72,7 +80,7 @@ python -m unittest -v test\_webcheck.py
 
 
 
-The tests use mocked HTTP responses to test key behaviours without depending on live websites.
+The tests use mocked HTTP responses to verify key behaviours without depending on live websites.
 
 
 
@@ -80,17 +88,21 @@ The tests use mocked HTTP responses to test key behaviours without depending on 
 
 
 
-The monitoring report is saved as `webcheck\_report.csv` in the current working directory. It records timestamps, URLs, HTTP status codes, response times, reachability, availability, and error details.
+The monitoring report is saved as `webcheck\_report.csv` in the current working directory.
 
 
 
-\## Project structure
+The CSV file records timestamps, URLs, HTTP status codes, response times, reachability, availability, and error details.
+
+
+
+\## Project Structure
 
 
 
 ```text
 
-D:\\WebCheck\\
+WebCheck/
 
 ├── webcheck.py
 
@@ -98,9 +110,9 @@ D:\\WebCheck\\
 
 ├── README.md
 
-├── webcheck\_report.csv
+├── .gitignore
 
-└── screenshots\\
+└── screenshots/
 
 &#x20;   ├── website-check.png
 
@@ -116,11 +128,15 @@ D:\\WebCheck\\
 
 \### Website Monitoring
 
+
+
 !\[WebCheck monitoring results](screenshots/website-check.png)
 
 
 
 \### Automated Tests
+
+
 
 !\[WebCheck automated tests](screenshots/tests-passed.png)
 
@@ -130,9 +146,9 @@ D:\\WebCheck\\
 
 
 
-\- Results reflect the checks performed during a run, not guaranteed continuous uptime.
+\- Results reflect the checks performed during a run and do not guarantee continuous uptime.
 
-\- HTTP availability is defined as a status code from 200 through 399.
+\- HTTP availability is defined as receiving a status code from 200 through 399.
 
 \- The project does not currently perform dedicated TLS certificate expiry checks.
 
@@ -142,5 +158,5 @@ D:\\WebCheck\\
 
 
 
-Python, HTTP, URL handling, CSV, unit testing, mocking, and basic network diagnostics.
+Python, HTTP, URL handling, CSV reporting, unit testing, mocking, and basic network diagnostics.
 
