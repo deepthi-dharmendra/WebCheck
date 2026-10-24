@@ -10,8 +10,6 @@ A Python-based website monitoring tool that checks HTTP responses, measures resp
 
 \## Features
 
-
-
 \- Checks website availability using HTTP requests
 
 \- Measures HTTP response time in milliseconds
@@ -34,8 +32,6 @@ A Python-based website monitoring tool that checks HTTP responses, measures resp
 
 \## Requirements
 
-
-
 \- Python 3
 
 \- Internet connection for live website checks
@@ -47,12 +43,6 @@ No third-party Python packages are required.
 
 
 \## Run the Application
-
-
-
-From the project directory, run:
-
-
 
 ```bash
 
@@ -68,8 +58,6 @@ Enter a website URL and choose the number of checks when prompted.
 
 \## Run Automated Tests
 
-
-
 ```bash
 
 python -m unittest -v test\_webcheck.py
@@ -84,8 +72,6 @@ The tests use mocked HTTP responses to verify key behaviours without depending o
 
 \## Output
 
-
-
 The monitoring report is saved as `webcheck\_report.csv` in the current working directory.
 
 
@@ -95,8 +81,6 @@ The CSV file records timestamps, URLs, HTTP status codes, response times, reacha
 
 
 \## Project Structure
-
-
 
 ```text
 
@@ -122,11 +106,7 @@ WebCheck/
 
 \## Screenshots
 
-
-
 \### Website Monitoring
-
-
 
 !\[WebCheck monitoring results](screenshots/website-check.png)
 
@@ -134,15 +114,11 @@ WebCheck/
 
 \### Automated Tests
 
-
-
 !\[WebCheck automated tests](screenshots/tests-passed.png)
 
 
 
 \## Limitations
-
-
 
 \- Results reflect the checks performed during a run and do not guarantee continuous uptime.
 
@@ -153,8 +129,6 @@ WebCheck/
 
 
 \## Technologies
-
-
 
 Python, HTTP, URL handling, CSV reporting, unit testing, mocking, and basic network diagnostics.
 
